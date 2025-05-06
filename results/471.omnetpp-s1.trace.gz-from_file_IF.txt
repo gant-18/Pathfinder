@@ -1,0 +1,86 @@
+
+*** ChampSim Multicore Out-of-Order Simulator ***
+
+Warmup Instructions: 1000000
+Prefetch Warmup Instructions: 10000000
+Simulation Instructions: 54612142
+Number of CPUs: 1
+LLC sets: 2048
+LLC ways: 16
+Off-chip DRAM Size: 4096 MB Channels: 1 Width: 64-bit Data Rate: 3200 MT/s
+
+CPU 0 runs ./gap_spec_traces/471.omnetpp-s1.trace.gz
+Read seed: 1083
+CPU 0 LLC from_file prefetcher
+
+Warmup complete CPU 0 instructions: 1000004 cycles: 457837 (Simulation time: 0 hr 0 min 1 sec) 
+
+Heartbeat CPU 0 instructions: 10000003 cycles: 28061328 heartbeat IPC: 0.356362 cumulative IPC: 1.08682e-07 (Simulation time: 0 hr 0 min 11 sec) 
+
+Warmup complete CPU 0 instructions: 10000003 cycles: 28061328 (Simulation time: 0 hr 0 min 11 sec) 
+
+Heartbeat CPU 0 instructions: 20000000 cycles: 60416866 heartbeat IPC: 0.309066 cumulative IPC: 0.309066 (Simulation time: 0 hr 0 min 24 sec) 
+Heartbeat CPU 0 instructions: 30000002 cycles: 91602815 heartbeat IPC: 0.320657 cumulative IPC: 0.314755 (Simulation time: 0 hr 0 min 37 sec) 
+Heartbeat CPU 0 instructions: 40000002 cycles: 124129038 heartbeat IPC: 0.307444 cumulative IPC: 0.31228 (Simulation time: 0 hr 0 min 49 sec) 
+Heartbeat CPU 0 instructions: 50000001 cycles: 155204315 heartbeat IPC: 0.321799 cumulative IPC: 0.314606 (Simulation time: 0 hr 1 min 1 sec) 
+Heartbeat CPU 0 instructions: 60000002 cycles: 190863001 heartbeat IPC: 0.280437 cumulative IPC: 0.307122 (Simulation time: 0 hr 1 min 14 sec) 
+Finished CPU 0 instructions: 54612142 cycles: 178761226 cumulative IPC: 0.305503 (Simulation time: 0 hr 1 min 21 sec) 
+
+ChampSim completed all CPUs
+
+Region of Interest Statistics
+
+CPU 0 cumulative IPC: 0.305503 instructions: 54612142 cycles: 178761226
+L1D TOTAL     ACCESS:   18751483  HIT:   17408000  MISS:    1343483
+L1D LOAD      ACCESS:   10277558  HIT:    9105790  MISS:    1171768
+L1D RFO       ACCESS:    8473925  HIT:    8302210  MISS:     171715
+L1D PREFETCH  ACCESS:          0  HIT:          0  MISS:          0
+L1D WRITEBACK ACCESS:          0  HIT:          0  MISS:          0
+L1D PREFETCH  REQUESTED:          0  ISSUED:          0  USEFUL:          0  USELESS:          0
+L1D AVERAGE MISS LATENCY: 171.504 cycles
+L1I TOTAL     ACCESS:   11403662  HIT:   11400013  MISS:       3649
+L1I LOAD      ACCESS:   11403662  HIT:   11400013  MISS:       3649
+L1I RFO       ACCESS:          0  HIT:          0  MISS:          0
+L1I PREFETCH  ACCESS:          0  HIT:          0  MISS:          0
+L1I WRITEBACK ACCESS:          0  HIT:          0  MISS:          0
+L1I PREFETCH  REQUESTED:          0  ISSUED:          0  USEFUL:          0  USELESS:          0
+L1I AVERAGE MISS LATENCY: 78.5667 cycles
+L2C TOTAL     ACCESS:    1914952  HIT:     752084  MISS:    1162868
+L2C LOAD      ACCESS:    1175401  HIT:     174367  MISS:    1001034
+L2C RFO       ACCESS:     171715  HIT:      11125  MISS:     160590
+L2C PREFETCH  ACCESS:          0  HIT:          0  MISS:          0
+L2C WRITEBACK ACCESS:     567836  HIT:     566592  MISS:       1244
+L2C PREFETCH  REQUESTED:          0  ISSUED:          0  USEFUL:          0  USELESS:          0
+L2C AVERAGE MISS LATENCY: 177.042 cycles
+LLC TOTAL     ACCESS:    2390234  HIT:     840982  MISS:    1549252
+LLC LOAD      ACCESS:    1001034  HIT:     156956  MISS:     844078
+LLC RFO       ACCESS:     160590  HIT:      16892  MISS:     143698
+LLC PREFETCH  ACCESS:     735617  HIT:     179021  MISS:     556596
+LLC WRITEBACK ACCESS:     492993  HIT:     488113  MISS:       4880
+LLC PREFETCH  REQUESTED:    1911728  ISSUED:     799421  USEFUL:      28709  USELESS:     516488
+LLC AVERAGE MISS LATENCY: 175.817 cycles
+Major fault: 0 Minor fault: 33563
+CPU 0 LLC from file prefetcher final stats
+
+DRAM Statistics
+ CHANNEL 0
+ RQ ROW_BUFFER_HIT:     138624  ROW_BUFFER_MISS:    1405720
+ DBUS_CONGESTED:     700504
+ WQ ROW_BUFFER_HIT:      90652  ROW_BUFFER_MISS:     345321  FULL:          0
+
+ AVG_CONGESTED_CYCLE: 6
+
+CPU 0 Branch Prediction Accuracy: 98.5288% MPKI: 3.51896 Average ROB Occupancy at Mispredict: 102.923
+
+Branch types
+NOT_BRANCH: 41549475 76.081%
+BRANCH_DIRECT_JUMP: 957474 1.75323%
+BRANCH_INDIRECT: 178637 0.327101%
+BRANCH_CONDITIONAL: 8789820 16.095%
+BRANCH_DIRECT_CALL: 1330871 2.43695%
+BRANCH_INDIRECT_CALL: 237365 0.434638%
+BRANCH_RETURN: 1568237 2.87159%
+BRANCH_OTHER: 0 0%
+
+
+gzip: stdout: Broken pipe
