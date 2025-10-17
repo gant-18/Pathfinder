@@ -69,6 +69,11 @@ These can be found in:
 * `bindsnet.network.nodes`
 * `bindsnet.models`
 
+The modified models are:
+
+* DiehlAndCook2015ModifiedExc - Modified the excitatory layer of the SNN with Integrate and Fire nodes instead of the classic LIF nodes (remove the leak).
+* DiehlAndCook2015ModifiedInh - Modified the inhibitory layer of the SNN with linear decay instead of exponential decay.
+
 Use these new models when constructing the SNN in:
 
 * `pathfinder_pcpage_functions.py`
